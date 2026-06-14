@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.main{
+    height: 100%;
+    width: 80%;
+    padding: 25px;
+    display: flex;
+    background-color: white;
+}
+
+.left{
+    height: 100%;
+    width: 60%;
+    background-color: #FCC70C;
+    border-radius: 25px 0px 0px 25px;
+    overflow: hidden;
+}
+
+
+.right{
+    height: 100%;
+    width: 40%;
+    background-color: #F9E7B4;
+    border-radius: 0px 25px 25px 0px;
+    position: relative;
+}
+
+.top {
+    margin: 35px;
+}
+
+.mid {
+    height: 50%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 8px;
+    margin: 100px 270px 0px 65px;
+    
+}
+
+h5 {
+    /* increase space between charactor */
+    font-size: 0.9rem;
+    letter-spacing: 5px;
+    font-weight: 800;
+    
+}
+
+h1 {
+    font-size: 6.5rem;
+    font-weight: 800;
+}
+
+p {
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #353006;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.bottom {
+    position: relative;
+}
+
+.bottom .pockball-logo {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+
+
+.menu {
+    text-align: right;
+    padding: 25px;
+}
+
+.ri-menu-line {
+    font-size: 2.5rem;  
+    text-align: right;
+}
+
+.ri-menu-line:hover {
+    cursor: pointer;
+    color: #353006;
+}
+
+.pikachu img {
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    right: -15px;
+}

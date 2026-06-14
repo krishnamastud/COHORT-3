@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-image: linear-gradient(135deg, #0b0731, #4c0436);
+  height: 100vh;
+  width: 80%;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 30px 36px;
+}
+
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.heading-row h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.see-all {
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.see-all:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding: 0 80px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  background-color: #1a0f2e;
+  display: block;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-count {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.heart {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.heart:hover {
+  color: #e91e8c;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+}

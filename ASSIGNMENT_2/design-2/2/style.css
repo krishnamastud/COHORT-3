@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 40px 20px 30px 20px;
+    border-bottom: 1px solid #222222;
+}
+
+header h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.divider .line {
+    width: 80px;
+    border: none;
+    border-top: 1px solid #c96a1a;
+}
+
+.divider .icon {
+    color: #c96a1a;
+    font-size: 18px;
+}
+
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.mocktails {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    padding: 20px 16px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.card.featured {
+    border-color: #c96a1a;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.card .subtitle {
+    font-size: 12px;
+    color: #888888;
+    text-align: center;
+}
+
+.card .card-line {
+    width: 30px;
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 4px 0px;
+}
+
+.card .price {
+    font-size: 18px;
+    color: #e8882a;
+    font-weight: 600;
+}
+
+.badge-star {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: #1a1a1a;
+    border: 1px solid #c96a1a;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: #e8882a;
+}
+
+.badge-new {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: #1a1a1a;
+    border: 1px solid #e53935;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: #ef5350;
+}
+
+
+.special {
+    background-color: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.special-img img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.special-text {
+    flex: 1;
+}
+
+.special-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #e8882a;
+    margin-bottom: 8px;
+}
+
+.special-text h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.special-tagline {
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-bottom: 12px;
+}
+
+.special-desc {
+    font-size: 13px;
+    color: #777777;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.explore-btn {
+    background-color: transparent;
+    border: 1px solid #c96a1a;
+    border-radius: 30px;
+    padding: 12px 28px;
+    color: #e8882a;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    background-color: #c96a1a22;
+}
+
+
+footer {
+    background-color: #0d0d0d;
+    border-top: 1px solid #222222;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #555555;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-links a {
+    font-size: 13px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #e8882a;
+}
+
+.footer-links span {
+    color: #444444;
+    font-size: 10px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-social p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.social-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-circle:hover {
+    border-color: #c96a1a;
+    color: #e8882a;
+}

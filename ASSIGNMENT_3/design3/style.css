@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0d0010;
+    background-image: radial-gradient(ellipse at 70% 40%, #6a003a 0%, #2a0044 45%, #0d0010 80%);
+    min-height: 100vh;
+    color: #fff;
+    padding: 0 180px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    gap: 40px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.1;
+    border: 2px solid #e91e8c;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #e91e8c;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-left: 26%;
+}
+
+ul li {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+}
+
+ul li.active {
+    color: #e91e8c;
+    border-bottom: 2px solid #e91e8c;
+    padding-bottom: 2px;
+}
+
+.menu {
+    margin-left: auto;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 60px 40px 40px;
+    width: 45%;
+}
+
+.hero h1 {
+    font-size: 80px;
+    line-height: 0.9;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e91e8c;
+}
+
+.hero p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.9;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.btn-play {
+    background: #e91e8c;
+    color: #fff;
+    border: none;
+    padding: 13px 26px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-trailer {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    padding: 13px 26px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.thumbnails {
+    height: 200px;
+    width: 80%;
+    display: flex;
+    gap: 16px;
+    background: linear-gradient(90deg, rgba(86, 13, 119, 0.8) 0%, rgba(90, 6, 90, 0.8) 100%);
+    padding: 16px;
+        border-radius: 12px;
+        margin: 0 auto;
+        /* background: transparent;
+        backdrop-filter: blur(80px); */
+}
+
+.thumb {
+    height: 100%;
+    width: 25%;
+
+}
+
+ img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.charactor {
+    position: absolute;
+    top: 70px;
+    right: 26%;
+}
+
+.charactor img{
+    width: 390px;
+}
+
+.socila-media {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 12px;
+    right: -64px;
+    top: 135px;
+}
+
+.socila-media img {
+    width: 33px;
+    
+}

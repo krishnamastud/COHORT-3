@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  height: 100%;
+  width: 70%;
+}
+
+.upper {
+  height: 73%;
+  width: 100%;
+  background-color: #4e7ea3;
+  border-radius: 0 0 50% 50% / 0 0 20% 20%;
+  position: relative;
+  z-index: 1;
+  background-image: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2278270/ss_6fcd3c375fdf11f4fb79094eaf063d55b6b7c545.1920x1080.jpg?t=1681882868");
+  background-size: cover;
+  background-position: center;
+}
+
+.lower {
+  height: 42%;
+  width: 100%;
+  background-color: #486786;
+  position: relative;
+  bottom: 109px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-media img {
+  filter: invert(100%);
+}
+
+.mint-button {
+  position: absolute;
+  bottom: 27%;
+  left: 68%;
+}
+
+.mint-button {
+  padding: 14px 40px;
+  min-width: 140px;
+  border: 1px solid #c9a054;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #111111;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f1cf6d;
+  transition:
+    transform 0.1s ease,
+    filter 0.2s ease;
+}
+
+.mint-button:hover {
+  filter: brightness(1.05);
+}
+
+.mint-button:active {
+  transform: scale(0.98);
+}
+
+.divider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%; /* Adjust to change the total width */
+  max-width: 800px;
+}
+
+/* The horizontal lines */
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #f1cfb3; /* Main beige line color */
+  opacity: 0.7;
+}
+
+/* Central nested diamond wrapper */
+.center-diamond-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #f1cfb3;
+  transform: rotate(45deg);
+  margin: 0 10px; /* Space between the center symbol and lines */
+}
+
+/* The inner solid diamond */
+.center-diamond-inner {
+  width: 6px;
+  height: 6px;
+  background-color: #f1cfb3;
+}
+
+/* Small solid diamond on the far left */
+.divider-container::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  width: 6px;
+  height: 6px;
+  background-color: #f1cfb3;
+  transform: rotate(45deg);
+  opacity: 0.8;
+}
+
+/* Small solid diamond on the far right */
+.divider-container::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  width: 6px;
+  height: 6px;
+  background-color: #f1cfb3;
+  transform: rotate(45deg);
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.details {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+ 
+.details p {
+    font-size: 12px;
+    color: #fff9f5ac;
+}
