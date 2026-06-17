@@ -114,6 +114,13 @@ body {
   cursor: pointer;
 }
 
+.heart img {
+      width: 14px;
+    height: 12px;
+    background: transparent;
+  filter: invert(100%)  brightness(70%);
+}
+
 .heart:hover {
   color: #e91e8c;
 }

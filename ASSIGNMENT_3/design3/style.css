@@ -8,7 +8,8 @@
 body {
     background-color: #0d0010;
     background-image: radial-gradient(ellipse at 70% 40%, #6a003a 0%, #2a0044 45%, #0d0010 80%);
-    min-height: 100vh;
+    min-height: 100%;
+    width: 100%;
     color: #fff;
     padding: 0 180px;
 }
