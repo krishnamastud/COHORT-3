@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  padding-top: 20px;
+  color: #f0f0f0;
+}
+
+main {
+  height: 95%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "top-left top-left top-center-first top-center-second top-right"
+    "top-left top-left top-center-first top-center-second center-right-up"
+    "center-left-first center-left-second center center center-right-up"
+    "center-left-first center-left-second center center center-right-down"
+    "bottom-left bottom-left bottom-left bottom-right bottom-right"
+    "bottom-left bottom-left bottom-left bottom-right bottom-right";
+  gap: 10px;
+  margin: 0px auto;
+  background-color: #252525;
+  padding: 15px;
+  border-radius: 28px;
+}
+
+.top-left {
+  background-color: #2323234d;
+  grid-area: top-left;
+  border-radius: 28px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.top {
+  display: flex;
+  align-items: start;
+  padding: 20px 10px 0px 20px;
+  gap: 10px;
+}
+
+.detail {
+  align-items: start;
+}
+
+.image {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.detail h3 {
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+.detail p {
+  font-size: 0.8rem;
+  color: #f0f0f0;
+  text-align: left;
+}
+
+.top-left h1 {
+  font-size: 1.25rem;
+  padding: 20px 0px 12px 20px;
+}
+
+.top-left p {
+  font-size: 0.8rem;
+  padding: 5px 0px 0px 20px;
+  color: #f0f0f064;
+  width: 90%;
+}
+
+.top img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.top-center-first {
+  grid-area: top-center-first;
+  border-radius: 28px;
+}
+
+.top-center-first img {
+  height: 100%;
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.top-center-second {
+  grid-area: top-center-second;
+  border-radius: 28px;
+}
+
+.top-center-second img {
+  height: 100%;
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.top-right {
+  grid-area: top-right;
+  border-radius: 28px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #2323234d;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.top-right .socialMedia-icon {
+  height: 42px;
+  width: 42px;
+  border-radius: 40%;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.socialMedia-icon div {
+  border: 2px solid #383838;
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia-icon div i {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.center-left-first {
+  grid-area: center-left-first;
+  border-radius: 28px;
+}
+
+.center-left-first img {
+  height: 100%;
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.center-left-second {
+  background-color: #2323234d;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  grid-area: center-left-second;
+  border-radius: 28px;
+}
+
+.center-left-second .upper {
+  height: 40%;
+  width: 100%;
+  padding: 18px;
+}
+
+.upper p {
+    color: #f0f0f064;
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+}
+
+.upper h3 {
+    color: #f0f0f0da;
+    font-size: 0.9rem;
+}
+
+.lower {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.socialMedia-icon-lower {
+   height: 42px;
+  width: 42px;
+  border-radius: 40%;
+  border: 2px solid black;
+}
+
+.socialMedia-icon-lower div {
+  border: 2px solid #383838;
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-left-second .upper {
+  height: 50%;
+  width: 100%;
+}
+
+.center {
+  background-color: hsl(60, 100%, 50%);
+  grid-area: center;
+  border-radius: 28px;
+}
+
+.center img {
+  height: 100%;
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.center-right-up {
+  background-color: #2323234d;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  grid-area: center-right-up;
+  border-radius: 28px;
+  padding: 18px;
+  position: relative;
+}
+
+.center-right-up p {
+  color: #f0f0f064;
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+}
+
+.center-right-up h3 {
+  color: #f0f0f0da;
+  font-size: 0.9rem;
+}
+
+.center-right-up div {
+  border: 2px solid #383838;
+  width: 33px;
+  height: 33px;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.center-right-down {
+  grid-area: center-right-down;
+  border-radius: 28px;
+  background-color: #2323234d;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-right-down i {
+  font-size: 3.5rem;
+  opacity: 0.8;
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+  border-radius: 28px;
+  background-color: #2323234d;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.bottom-left .left {
+  width: 50%;
+  height: 100%;
+}
+
+.left h2 {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.left p {
+  font-size: 0.7rem;
+  color: #f0f0f064;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.bottom-left .right {
+  width: 50%;
+  height: 100%;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+  border-radius: 28px;
+  background-color: #2323234d;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px;
+  gap: 10px;
+}
+
+.bottom-right h2 {
+  font-size: 1.4rem;
+  color: #f0f0f0;
+}
+
+.bottom-right p {
+  font-size: 0.8rem;
+  color: #f0f0f064;
+  text-align: left;
+  line-height: 1.5;
+}
