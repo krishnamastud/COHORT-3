@@ -1,16 +1,267 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M13 2 3 14h7l-1 8 10-12h-7z" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Flow</h1>
+          <span>Your daily command center</span>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <div class="header-clock">
+          <div class="time" id="headerTime">10:12 AM</div>
+          <div class="date" id="headerDate">Loading date…</div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="knob">
+            <svg
+              id="toggleIcon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4.5" />
+              <path
+                d="M12 3v1.5M12 19.5V21M4.2 4.2l1.1 1.1M18.7 18.7l1.1 1.1M3 12h1.5M19.5 12H21M4.2 19.8l1.1-1.1M18.7 5.3l1.1-1.1"
+              />
+            </svg>
+          </span>
+        </button>
+        <div class="avatar">JS</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Dashboard -->
+      <div class="dashboard">
+        <div class="section-heading">
+          <span class="greeting">Good afternoon</span>
+          <h2>Here's your day at a glance</h2>
+          <p>Pick up where you left off, or start something new.</p>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- todo card -->
+        <div class="todo-card feature-card">
+          <div class="card-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 11l3 3 8-8" />
+              <path
+                d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"
+              />
+            </svg>
+          </div>
+          <div class="card-title">Todo List</div>
+          <div class="card-desc">
+            Capture tasks, mark what matters, and clear your list with focus.
+          </div>
+          <div class="card-arrow">
+            <span class="todoBadgeText">3 open tasks</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- planner card -->
+        <div class="planner-card feature-card">
+          <div class="card-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="5" width="18" height="16" rx="3" />
+              <path d="M3 10h18M8 3v4M16 3v4" />
+            </svg>
+          </div>
+          <div class="card-title">Daily Planner</div>
+          <div class="card-desc">
+            Block out your hours and see exactly where the day is going.
+          </div>
+          <div class="card-arrow">
+            <span class="todoBadgeText">Plan your hours</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Goals -->
+        <div class="goals-card feature-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="12" cy="12" r="1.2" fill="#fff" />
+            </svg>
+          </div>
+          <div class="card-title">Daily Goals</div>
+          <div class="card-desc">
+            Set the goals that matter today and watch your progress ring
+              fill.
+          </div>
+          <div class="card-arrow">
+            <span class="todoBadgeText">0% complete</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Pomodoro -->
+        <div class="pomodoro-card feature-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="13" r="8" />
+              <path d="M12 9v4l3 2M9 2h6M12 2v3" />
+            </svg>
+          </div>
+          <div class="card-title">Pomodoro Timer</div>
+          <div class="card-desc">
+            Work in focused sprints with built-in breaks to keep momentum.
+          </div>
+          <div class="card-arrow">
+            <span class="todoBadgeText">25:00 focus session</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Quotes -->
+        <div class="quotes-card feature-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M7 8c-2.5 1-4 3-4 6a4 4 0 0 0 4 4c2 0 3.5-1.5 3.5-3.5C10.5 12 9 10.5 7 11c.3-1.5 1.3-2.5 2.5-3z" />
+              <path
+                d="M17 8c-2.5 1-4 3-4 6a4 4 0 0 0 4 4c2 0 3.5-1.5 3.5-3.5 0-2.5-1.5-4-3.5-3.5.3-1.5 1.3-2.5 2.5-3z" />
+            </svg>
+          </div>
+          <div class="card-title">Motivation Quotes</div>
+          <div class="card-desc">
+            A short spark of encouragement whenever your focus dips.
+          </div>
+          <div class="card-arrow">
+            <span class="todoBadgeText">Get inspired</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Weather -->
+        <div class="Weather-card feature-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.4 2A4 4 0 0 0 6.5 19h11z" />
+            </svg>
+          </div>
+          <div class="card-title">Weather</div>
+          <div class="card-desc">
+            A quick look outside before you plan your day around it.
+          </div>
+          <div class="card-arrow">
+            <span class="todoBadgeText">Loading…</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </div>
+        </div>
 
 
+
+
+
+      </div>
+    </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
