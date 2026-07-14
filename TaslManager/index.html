@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark">
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1>Task Manager</h1>
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+
+        <button id="themeBtn">Dark Mode</button>
+      </header>
+
+      <!-- Form -->
+      <section class="form-section">
+        <form id="taskForm">
+          <div class="input-group">
+            <label>Task Title</label>
+            <input type="text" id="taskTitle" placeholder="Enter task..." />
+          </div>
+
+          <div class="input-group">
+            <label>Category</label>
+
+            <select id="taskCategory">
+              <option value="">Select Category</option>
+
+              <option value="Work">Work</option>
+
+              <option value="Personal">Personal</option>
+
+              <option value="Study">Study</option>
+
+              <option value="Shopping">Shopping</option>
+
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="add-btn">Add Task</button>
+        </form>
+      </section>
+
+      <!-- Task Container -->
+
+      <section class="task-section">
+        <h2>Tasks</h2>
+
+        <div id="taskContainer">
+          <!-- Create cards here using JS -->
+          
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
